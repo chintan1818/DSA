@@ -1,0 +1,13 @@
+ public static int findMaxOfArray(int[] array) {
+        // Assume the first element is the maximum initially
+        int max = array[0];
+
+        // Iterate through the array starting from the second element
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i]; // Update max if current element is greater
+            }
+        }
+
+        return max;
+    }
