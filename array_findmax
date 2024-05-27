@@ -11,3 +11,18 @@
 
         return max;
     }
+
+
+ public static int findMinOfArray(int[] array) {
+        // Assume the first element is the maximum initially
+        int min = array[0];
+
+        // Iterate through the array starting from the second element
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i]; // Update max if current element is greater
+            }
+        }
+
+        return min;
+    }
