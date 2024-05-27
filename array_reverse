@@ -1,0 +1,15 @@
+ public static void reverseArray(int[] array) {
+        int start = 0;
+        int end = array.length - 1;
+
+        while (start < end) {
+            // Swap the elements at start and end
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+
+            // Move the pointers
+            start++;
+            end--;
+        }
+    }
